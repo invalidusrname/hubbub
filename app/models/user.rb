@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
   has_one :twitter, :class_name => "TwitterToken",  :dependent => :destroy
 
   validates_presence_of :name
+  
+  has_many :posts
 end
