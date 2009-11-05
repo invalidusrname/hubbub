@@ -1,6 +1,6 @@
 module TwitterHelper
   def link_to_twitter_image(friend)
-    link_to image_tag(friend.profile_image_url, :class => 'twitter_image'), "http://www.twitter.com/#{friend.name}"
+    link_to image_tag(friend.profile_image_url, :class => 'twitter_image'), "http://www.twitter.com/#{friend.screen_name}"
   end
   
   def unlink_twitter
