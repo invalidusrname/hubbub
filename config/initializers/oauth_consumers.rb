@@ -35,26 +35,33 @@
 #   :nu_bux=>{
 #     :key=>"",
 #     :secret=>"",
-#     :super_class=>"OpenTransactToken",  # if a OAuth service follows a particular standard 
+#     :super_class=>"OpenTransactToken",  # if a OAuth service follows a particular standard
 #                                         # with a token implementation you can set the superclass
 #                                         # to use
 #     :options=>{ # OAuth::Consumer options
-#       :site=>"http://nubux.heroku.com" 
+#       :site=>"http://nubux.heroku.com"
 #     }
 #   }
 # }
-# 
+#
 OAUTH_CREDENTIALS={
   :meetup => {
     :key => "623DFB0291048739434FCB38822B79C8",
-    :secret => "873DB54E1C3050830A3605E66AABEBDB", 
+    :secret => "873DB54E1C3050830A3605E66AABEBDB",
     :options => {
-      :site=>"http://www.meetup.com/oauth/request/"
+      :site => "http://www.meetup.com/oauth/request/"
     }
   },
-  :twitter=>{
+  :twitter => {
     :key    => "ggUVgtxsNrRdbBoW87xXtg",
     :secret => "WcI1CxjClbuIfZVFRMdREdx5EFeED7QaRF0DO0gHII"
+  },
+  :linkedin => {
+    :key => 'F9uRK3y1eh1Zkbu19LjO8jY0tbdi5wPrudDPlmStcMXDPnSx7E0PjsLWSPpYUc1b',
+    :secret => 'ZYIWAjjn3lJ8hQeMFbnNO1XkCEUPje91H8_YUgFKY9Q82ORnUT9D2phUwoAVtQwb',
+    :options => {
+      :site => 'https://api.linkedin.com'
+    }
   }
 } unless defined? OAUTH_CREDENTIALS
 
